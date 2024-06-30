@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="website,trip,trip planning">
+    <meta name="author" content="Sohil Lochan V">
+    <meta name="keywords" content="website,trip,plan,tour,tourism">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Set default font */
+        }
+        h1 {
+            font-family: 'Playwrite PL', sans-serif; /* Set specific font for H1 */
+        }
+        .main-bg {
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background-image 0.4s ease-in-out; /* Smooth transition for background image */
+        }
+        .box {
+            overflow: hidden; /* Hide overflowing content */
+            position: relative; /* Required for absolute positioning of fade effect */
+        }
+        .fade-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20%; /* Adjust height of fade effect */
+            background: linear-gradient(transparent, white); /* Gradient for fade effect */
+        }
+    </style>
+    <!-- JavaScript -->
+    <script>
+        // JavaScript function to change background image
+        function changeBackground(imageUrl) {
+            document.querySelector('.main-bg').style.backgroundImage = `url(${imageUrl})`;
+        }
+    </script>
+</head>
+<body class="font-poppins">
+    <div class="2xl:container mx-auto h-screen bg-[url('/res/bg.webp')] bg-cover bg-no-repeat main-bg">
+        <div class="container w-[90%] h-full grid grid-cols-3 gap-0 justify-center items-center mx-auto">
+            <!-- Box 1 -->
+            <div class="box h-[350px] w-[300px] bg-white rounded-[20px] m-10 hover:scale-105 transition-transform duration-[0.4s]"
+                 onmouseover="changeBackground('/res/bg-1.jpeg')">
+                <img src="/res/bg-1.jpeg" class="w-[100%] rounded-[20px]" alt="Image 1">
+                <a href="#"><h1 class="font-[poppins] text-[18px] mx-5 my-3">Summer & Beaches</h1></a>
+                <p class="text-[12px] mx-5 text-gray-800 overflow-hidden">As summer approaches, so does the peak season for beach tourism. This period marks the opening of numerous coastal destinations worldwide, attracting travelers seeking relaxation, adventure, and seaside activities.</p>
+                <div class="fade-overlay"></div>
+            </div>
+            
+            <!-- Box 2 -->
+            <div class="box h-[350px] w-[300px] bg-white rounded-[20px] m-10 hover:scale-105 transition-transform duration-[0.4s]"
+                 onmouseover="changeBackground('/res/bg-2.jpeg')">
+                <img src="/res/bg-2.jpeg" class="w-[100%] rounded-[20px]" alt="Image 2">
+                <a href="#"><h1 class="font-[poppins] text-[18px] mx-5 my-3">Summer & Beaches</h1></a>
+                <p class="text-[12px] mx-5 text-gray-800 overflow-hidden">As summer approaches, so does the peak season for beach tourism. This period marks the opening of numerous coastal destinations worldwide, attracting travelers seeking relaxation, adventure, and seaside activities.</p>
+                <div class="fade-overlay"></div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="box h-[350px] w-[300px] bg-white rounded-[20px] m-10 hover:scale-105 transition-transform duration-[0.4s]"
+                 onmouseover="changeBackground('/res/bg-3.jpeg')">
+                <img src="/res/bg-3.jpeg" class="w-[100%] rounded-[20px]" alt="Image 3">
+                <a href="#"><h1 class="font-[poppins] text-[18px] mx-5 my-3">Summer & Beaches</h1></a>
+                <p class="text-[12px] mx-5 text-gray-800 overflow-hidden">As summer approaches, so does the peak season for beach tourism. This period marks the opening of numerous coastal destinations worldwide, attracting travelers seeking relaxation, adventure, and seaside activities.</p>
+                <div class="fade-overlay"></div>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="box h-[350px] w-[300px] bg-white rounded-[20px] m-10 hover:scale-105 transition-transform duration-[0.4s]"
+                 onmouseover="changeBackground('/res/bg-4.webp')">
+                <img src="/res/bg-4.webp" class="w-[100%] rounded-[20px]" alt="Image 4">
+                <a href="#"><h1 class="font-[poppins] text-[18px] mx-5 my-3">Summer & Beaches</h1></a>
+                <p class="text-[12px] mx-5 text-gray-800 overflow-hidden">As summer approaches, so does the peak season for beach tourism. This period marks the opening of numerous coastal destinations worldwide, attracting travelers seeking relaxation, adventure, and seaside activities.</p>
+                <div class="fade-overlay"></div>
+            </div>
+
+            <!-- Box 5 -->
+            <div class="box h-[350px] w-[300px] bg-white rounded-[20px] m-10 hover:scale-105 transition-transform duration-[0.4s]"
+                 onmouseover="changeBackground('/res/bg-5.avif')">
+                <img src="/res/bg-5.avif" class="w-[100%] rounded-[20px]" alt="Image 5">
+                <a href="#"><h1 class="font-[poppins] text-[18px] mx-5 my-3">Summer & Beaches</h1></a>
+                <p class="text-[12px] mx-5 text-gray-800 overflow-hidden">As summer approaches, so does the peak season for beach tourism. This period marks the opening of numerous coastal destinations worldwide, attracting travelers seeking relaxation, adventure, and seaside activities.</p>
+                <div class="fade-overlay"></div>
+            </div>
+
+            <!-- Box 6 -->
+            <div class="box h-[350px] w-[300px] bg-white rounded-[20px] m-10 hover:scale-105 transition-transform duration-[0.4s]"
+                 onmouseover="changeBackground('/res/bg-6.jpeg')">
+                <img src="/res/bg-6.jpeg" class="w-[100%] rounded-[20px]" alt="Image 6">
+                <a href="#"><h1 class="font-[poppins] text-[18px] mx-5 my-3">Summer & Beaches</h1></a>
+                <p class="text-[12px] mx-5 text-gray-800 overflow-hidden">As summer approaches, so does the peak season for beach tourism. This period marks the opening of numerous coastal destinations worldwide, attracting travelers seeking relaxation, adventure, and seaside activities.</p>
+                <div class="fade-overlay"></div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
